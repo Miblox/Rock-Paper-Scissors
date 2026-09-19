@@ -9,7 +9,7 @@ failedd = 0
 for i in range(3):
     round_game += 1
     computer = random.choice(itemss)
-    user_input = input("камень ножницы или бумага:  ")
+    user_input = input("камень ножницы или бумага:  ").lower().strip()
 
     if user_input == "ножницы" and computer == "бумага":
         print(f"Ты выйграл! это {round_game} раунд")
@@ -36,7 +36,7 @@ for i in range(3):
         failedd += 1
 
     elif user_input == computer:
-        print("Ничья!")
+        print(f"Ничья! это {round_game} раунд")
 
     else:
         print("неверно! ты проиграл!")
