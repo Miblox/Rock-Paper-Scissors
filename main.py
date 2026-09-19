@@ -50,3 +50,6 @@ elif winner == failedd:
 
 else:
     print(f"Ты проиграл попробуй снова! твой резултат: Проиграл: {failedd}, Выйграно: {winner}")
+
+
+input("\nНажмите Enter чтобы выйти... ")
